@@ -16,6 +16,7 @@ app.get("/gallery",function(req,res){
     res.render("gallery",{val: val});
 });
 
+
 app.get("/events",function(req,res){
     val="events";
     res.render("events",{val: val});
@@ -26,3 +27,7 @@ if (port == null || port == "") {
   port = 8000;
 }
 app.listen(port);
+
+// app.listen(3000,function(){
+//     console.log("cosmos is running on port no 3000");
+// });
